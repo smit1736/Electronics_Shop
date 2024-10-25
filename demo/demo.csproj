@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8CCDA5EA-813C-49EA-9808-331439A68B2A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>demo</RootNamespace>
+    <AssemblyName>demo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="address.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="address.Designer.cs">
+      <DependentUpon>address.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_product.Designer.cs">
+      <DependentUpon>add_product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_dashboard.Designer.cs">
+      <DependentUpon>admin_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_login.Designer.cs">
+      <DependentUpon>admin_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="checkout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="checkout.Designer.cs">
+      <DependentUpon>checkout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_home.Designer.cs">
+      <DependentUpon>admin_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="order_summary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="order_summary.Designer.cs">
+      <DependentUpon>order_summary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="product_view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="product_view.Designer.cs">
+      <DependentUpon>product_view.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_dashboard.Designer.cs">
+      <DependentUpon>user_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_home.Designer.cs">
+      <DependentUpon>user_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_login.Designer.cs">
+      <DependentUpon>user_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="order_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="order_list.Designer.cs">
+      <DependentUpon>order_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="product.Designer.cs">
+      <DependentUpon>product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.cs">
+      <DependentUpon>register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="users_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="users_list.Designer.cs">
+      <DependentUpon>users_list.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="address.resx">
+      <DependentUpon>address.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_product.resx">
+      <DependentUpon>add_product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_dashboard.resx">
+      <DependentUpon>admin_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_login.resx">
+      <DependentUpon>admin_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checkout.resx">
+      <DependentUpon>checkout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_home.resx">
+      <DependentUpon>admin_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="order_summary.resx">
+      <DependentUpon>order_summary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="product_view.resx">
+      <DependentUpon>product_view.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_dashboard.resx">
+      <DependentUpon>user_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_home.resx">
+      <DependentUpon>user_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_login.resx">
+      <DependentUpon>user_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="order_list.resx">
+      <DependentUpon>order_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="product.resx">
+      <DependentUpon>product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="users_list.resx">
+      <DependentUpon>users_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo.ico" />
+    <Content Include="Properties\electronic_shop.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\electronic_shop_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>electronic_shop.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\shopping-list %281%29.png" />
+    <None Include="Resources\order Summary %281%29.png" />
+    <None Include="Resources\laptop.jpg" />
+    <None Include="Resources\main.jpg" />
+    <None Include="Resources\tttvvv1.jpg" />
+    <None Include="Resources\Untitled design1.jpg" />
+    <None Include="Resources\tvv.jpeg" />
+    <None Include="Resources\tttvvv.jpg" />
+    <None Include="Resources\samtv.jpeg" />
+    <None Include="Resources\phone_profile1.jpg" />
+    <None Include="Resources\laptop_profile.jpg" />
+    <None Include="Resources\galaxy-s24-ultra-highlights-color-carousel-global-mo.jpg" />
+    <None Include="Resources\11111.jpg" />
+    <None Include="Resources\1111.jpg" />
+    <None Include="Resources\Untitled design.jpg" />
+    <None Include="Resources\phone_profile.jpg" />
+    <None Include="Resources\checklist %281%29.png" />
+    <None Include="Resources\checklist.png" />
+    <None Include="Resources\eye-scan %281%29.png" />
+    <None Include="Resources\eye-scan.png" />
+    <None Include="Resources\signup.png" />
+    <None Include="Resources\enrollment.png" />
+    <None Include="Resources\back-arrow %281%29.png" />
+    <None Include="Resources\back-arrow.png" />
+    <None Include="Resources\Pi7_arrows.png" />
+    <None Include="Resources\logout %282%29 %281%29.png" />
+    <None Include="Resources\logout %281%29.png" />
+    <None Include="Resources\product %281%29.png" />
+    <None Include="Resources\order-list %281%29.png" />
+    <None Include="Resources\user-list %281%29.png" />
+    <None Include="Resources\home %282%29.png" />
+    <None Include="Resources\arrows.png" />
+    <None Include="Resources\user-profile.png" />
+    <None Include="Resources\user-login1.png" />
+    <None Include="Resources\user-login.png" />
+    <None Include="Resources\admin_login.png" />
+    <None Include="Resources\home %281%29.png" />
+    <None Include="Resources\electronic-store.png" />
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\store.png" />
+    <None Include="Resources\shoplogo.png" />
+    <None Include="Resources\29d9d40312b5b5e6216e2becdfd318b6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
